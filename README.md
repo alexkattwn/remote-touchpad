@@ -41,4 +41,4 @@ wails build -clean -platform windows/amd64 -ldflags "-w -s -H=windowsgui"
 ### 4. Результат
 
 После завершения сборки готовый автономный файл появится по пути:
-remote-touchpad/build/bin/remote-touchpad.exe
+remote-touchpad/build/bin/Remote Touchpad.exe
