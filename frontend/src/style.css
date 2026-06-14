@@ -1,0 +1,94 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+    overflow: hidden;
+}
+
+#app {
+    text-align: center;
+    background: #0d0d13;
+    padding: 20px;
+    border-radius: 12px;
+    width: 330px;
+    border: 2px solid #00ffcc;
+    box-shadow:
+        0 0 15px rgba(0, 255, 204, 0.3),
+        inset 0 0 10px rgba(0, 255, 204, 0.1);
+}
+
+h2 {
+    color: #ff0055;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-shadow: 0 0 8px rgba(255, 0, 85, 0.6);
+}
+
+#touchpad-link {
+    font-family: Consolas, 'Liberation Mono', monospace;
+    font-size: 12px;
+    color: #00ffcc;
+    background-color: #14141f;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 0 0 15px 0;
+    word-break: break-all;
+    border: 1px dashed #ff0055;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+#touchpad-link:hover {
+    background-color: #1a1a2e;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.4);
+    border-style: solid;
+}
+
+.qr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ff0055;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(255, 0, 85, 0.4);
+    padding: 5px;
+    background: #fff;
+}
+
+/* Кнопка Закрыть */
+button {
+    background-color: transparent;
+    color: #ff0055;
+    border: 2px solid #ff0055;
+    padding: 8px 0;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff0055;
+    color: #0a0a0f;
+    box-shadow: 0 0 12px rgba(255, 0, 85, 0.6);
+}

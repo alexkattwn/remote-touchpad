@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
-	"remote-touchpad/cmd/internal/mouse"
+	"remote-touchpad/internal/mouse"
 	"strings"
 	"sync"
 	"time"
@@ -116,7 +116,6 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Println("Пользователь подключился")
 
-	// ready
 	conn.WriteJSON(map[string]string{
 		"type": "ready",
 	})

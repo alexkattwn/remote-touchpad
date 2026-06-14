@@ -14,17 +14,14 @@ var (
 	procGetCursorPos = user32.NewProc("GetCursorPos")
 )
 
-// ===== структура точки =====
 type point struct {
 	X, Y int32
 }
 
-// ===== движение =====
 func Move(x, y int) {
 	procSetCursorPos.Call(uintptr(x), uintptr(y))
 }
 
-// ===== клики =====
 func LeftClick() {
 	const (
 		MOUSEEVENTF_LEFTDOWN = 0x0002
@@ -45,7 +42,6 @@ func RightClick() {
 	procMouseEvent.Call(MOUSEEVENTF_RIGHTUP, 0, 0, 0, 0)
 }
 
-// ===== скролл =====
 func Scroll(dy int) {
 	const MOUSEEVENTF_WHEEL = 0x0800
 
@@ -58,7 +54,6 @@ func Scroll(dy int) {
 	)
 }
 
-// ===== позиция =====
 func GetPos() (int, int) {
 	var p point
 	procGetCursorPos.Call(uintptr(unsafe.Pointer(&p)))
